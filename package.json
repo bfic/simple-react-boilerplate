@@ -1,0 +1,48 @@
+{
+  "name": "essential-react",
+  "version": "0.5.0",
+  "description": "A minimal skeleton for building React apps using Babel, Webpack, Sass",
+  "main": "src/main.js",
+  "scripts": {
+    "postinstall": "npm run build",
+    "dev": "node start.js",
+    "server": "node start.js",
+    "build": "webpack -p --progress --config webpack.local.config.js",
+    "clean": "rm build/bundle.js | rem build/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pheuter/essential-react.git"
+  },
+  "keywords": [
+  ],
+  "author": "Bartosz Fic",
+  "license": "MIT",
+  "homepage": "",
+  "devDependencies": {
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "^6.5.2",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.5.2",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "react-addons-test-utils": "^15.0.1",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.13.1",
+    "sass-loader": "^4.0.2",
+    "node-sass": "^3.11.1",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "babel-core": "^6.5.2",
+    "babel-polyfill": "^6.5.0",
+    "babel-runtime": "^6.5.0",
+    "express": "^4.12.3",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-router": "^3.0.0"
+  }
+}
